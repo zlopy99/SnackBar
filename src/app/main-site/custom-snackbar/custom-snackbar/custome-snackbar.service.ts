@@ -20,6 +20,8 @@ export class CustomeSnackbarService {
         snackBar: this._snackBar
       },
       panelClass: 'success-snackbar',
+      horizontalPosition: 'end',
+      verticalPosition: 'bottom',
       duration: duration
     });
   }
@@ -33,6 +35,8 @@ export class CustomeSnackbarService {
         type: type,
         snackBar: this._snackBar
       },
+      horizontalPosition: 'end',
+      verticalPosition: 'bottom',
       panelClass: 'error-snackbar'
     });
   }
@@ -46,6 +50,8 @@ export class CustomeSnackbarService {
         type: type,
         snackBar: this._snackBar
       },
+      horizontalPosition: 'end',
+      verticalPosition: 'bottom',
       panelClass: 'warning-snackbar'
     });
   }
@@ -59,6 +65,8 @@ export class CustomeSnackbarService {
         type: type,
         snackBar: this._snackBar
       },
+      horizontalPosition: 'end',
+      verticalPosition: 'bottom',
       panelClass: 'info-snackbar'
     });
   }
