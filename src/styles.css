@@ -1,1 +1,33 @@
 /* You can add global styles to this file, and also import other style files */
+
+html, body { height: 100%; }
+body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
+
+/* Overiding mat styls */
+.mat-mdc-snack-bar-container.success-snackbar {
+    --mdc-snackbar-container-color: none;
+    border-radius: 0.2rem;
+}
+.mat-mdc-snack-bar-container.error-snackbar {
+    --mdc-snackbar-container-color: none;
+    border-radius: 0.2rem;
+}
+.mat-mdc-snack-bar-container.warning-snackbar {
+    --mdc-snackbar-container-color: none;
+    border-radius: 0.2rem;
+}
+.mat-mdc-snack-bar-container.info-snackbar {
+    --mdc-snackbar-container-color: none;
+    border-radius: 0.2rem;
+}
+.mat-icon.mat-icon-snack {
+    height: 2rem;
+    width: 2rem;
+}
+.mat-mdc-button:not(:disabled).mat-button-action {
+    margin-left: 4rem;
+}
+.mat-icon.mat-icon-snack {
+    height: 2rem;
+    width: 2rem;
+}
