@@ -25,7 +25,7 @@ export class CustomSnackbarComponent implements OnInit, OnDestroy {
 
     if(this.duration !== 0) {
       this.progress = interval(50).pipe(
-        mapTo(100),
+        map(value => 100),
         scan(a => a - 1),
         takeWhile((value) => value >= 0, true),
         takeUntil(this.destroy),
@@ -37,7 +37,7 @@ export class CustomSnackbarComponent implements OnInit, OnDestroy {
       });
     } else {
       this.progress = interval(50).pipe(
-        mapTo(100),
+        map(value => 100),
         takeUntil(this.destroy)
       );
       this.progress.pipe(takeLast(1)).subscribe((_) => {
