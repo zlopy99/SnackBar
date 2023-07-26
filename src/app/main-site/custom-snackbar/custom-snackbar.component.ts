@@ -21,7 +21,7 @@ export class CustomSnackbarComponent implements OnInit, OnDestroy {
   }
 
   ngOnInit() {
-    this.duration = this.data.duration !== undefined ? Number(this.data.duration) / 10 : 0;
+    this.duration = this.data.duration !== undefined ? this.data.duration / 10 : 0;
 
     if(this.duration !== 0) {
       this.progress = interval(50).pipe(
