@@ -17,7 +17,8 @@ export class CustomeSnackbarService {
         action: action,
         icon: 'check_circle',
         type: type,
-        snackBar: this._snackBar
+        snackBar: this._snackBar,
+        duration: duration
       },
       panelClass: 'success-snackbar',
       horizontalPosition: 'end',
@@ -33,7 +34,8 @@ export class CustomeSnackbarService {
         action: action,
         icon: 'error',
         type: type,
-        snackBar: this._snackBar
+        snackBar: this._snackBar,
+        duration: duration
       },
       horizontalPosition: 'end',
       verticalPosition: 'bottom',
@@ -48,7 +50,8 @@ export class CustomeSnackbarService {
         action: action,
         icon: 'warning',
         type: type,
-        snackBar: this._snackBar
+        snackBar: this._snackBar,
+        duration: duration
       },
       horizontalPosition: 'end',
       verticalPosition: 'bottom',
@@ -63,7 +66,8 @@ export class CustomeSnackbarService {
         action: action,
         icon: 'feedback',
         type: type,
-        snackBar: this._snackBar
+        snackBar: this._snackBar,
+        duration: duration
       },
       horizontalPosition: 'end',
       verticalPosition: 'bottom',

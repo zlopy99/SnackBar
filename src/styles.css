@@ -4,9 +4,16 @@ html, body { height: 100%; }
 body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
 
 /* Overiding mat styls */
+
+/* Mat snackbar */
 .mat-mdc-snack-bar-container.success-snackbar {
     --mdc-snackbar-container-color: none;
+}
+.mdc-snackbar__label {
+    padding-left: 0 !important;
+    padding-bottom: 0 !important;
     border-radius: 0.2rem;
+    border-left: 1.2rem solid #01dc6a;
 }
 .mat-mdc-snack-bar-container.error-snackbar {
     --mdc-snackbar-container-color: none;
@@ -20,14 +27,20 @@ body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
     --mdc-snackbar-container-color: none;
     border-radius: 0.2rem;
 }
-.mat-icon.mat-icon-snack {
-    height: 2rem;
-    width: 2rem;
-}
+/* Mat button */
 .mat-mdc-button:not(:disabled).mat-button-action {
     margin-left: 4rem;
+    color: black;
 }
+.mat-mdc-button.mat-button-action, .mat-mdc-outlined-button.mat-button-action {
+    --mat-mdc-button-persistent-ripple-color: black;
+}
+/* Mat icon */
 .mat-icon.mat-icon-snack {
     height: 2rem;
     width: 2rem;
+}
+/* Mat progres bar */
+.mat-mdc-progress-bar {
+    --mdc-linear-progress-active-indicator-color: #01dc6a;
 }

@@ -1,0 +1,98 @@
+/* You can add global styles to this file, and also import other style files */
+
+html, body { height: 100%; }
+body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
+
+/* Overiding mat styls */
+
+/* Mat snackbar */
+.mat-mdc-snack-bar-container.success-snackbar {
+    --mdc-snackbar-container-color: none;
+    .mdc-snackbar__label {
+        padding-left: 0 !important;
+        padding-bottom: 0 !important;
+        border-radius: 0.2rem;
+        border-left: 1.2rem solid #01dc6a;
+    }
+    /* Mat progres bar */
+    .mat-mdc-progress-bar {
+        --mdc-linear-progress-active-indicator-color: #01dc6a;
+    }
+    .mat-icon {
+        color: #01dc6a;
+    }
+    .h3-snack {
+        font-weight: bold;
+    }
+}
+
+.mat-mdc-snack-bar-container.error-snackbar {
+    --mdc-snackbar-container-color: none;
+    .mdc-snackbar__label {
+        padding-left: 0 !important;
+        padding-bottom: 0 !important;
+        border-radius: 0.2rem;
+        border-left: 1.2rem solid #fe3451;
+    }
+    /* Mat progres bar */
+    .mat-mdc-progress-bar {
+        --mdc-linear-progress-active-indicator-color: #fe3451;
+    }
+    .mat-icon {
+        color: #fe3451;
+    }
+    .h3-snack {
+        font-weight: bold;
+    }
+}
+.mat-mdc-snack-bar-container.warning-snackbar {
+    --mdc-snackbar-container-color: none;
+    .mdc-snackbar__label {
+        padding-left: 0 !important;
+        padding-bottom: 0 !important;
+        border-radius: 0.2rem;
+        border-left: 1.2rem solid #ffcc00;
+    }
+    /* Mat progres bar */
+    .mat-mdc-progress-bar {
+        --mdc-linear-progress-active-indicator-color: #ffcc00;
+    }
+    .mat-icon {
+        color: #ffcc00;
+    }
+    .h3-snack {
+        font-weight: bold;
+    }
+}
+.mat-mdc-snack-bar-container.info-snackbar {
+    --mdc-snackbar-container-color: none;
+    .mdc-snackbar__label {
+        padding-left: 0 !important;
+        padding-bottom: 0 !important;
+        border-radius: 0.2rem;
+        border-left: 1.2rem solid #00FFFF;
+    }
+    /* Mat progres bar */
+    .mat-mdc-progress-bar {
+        --mdc-linear-progress-active-indicator-color: #00FFFF;
+    }
+    .mat-icon {
+        color: #00FFFF;
+    }
+    .h3-snack {
+        font-weight: bold;
+    }
+}
+/* Mat button */
+.mat-mdc-button:not(:disabled).mat-button-action {
+    margin-left: 4rem;
+    color: black;
+}
+.mat-mdc-button.mat-button-action, .mat-mdc-outlined-button.mat-button-action {
+    --mat-mdc-button-persistent-ripple-color: black;
+}
+/* Mat icon */
+.mat-icon.mat-icon-snack {
+    height: 2rem;
+    width: 2rem;
+}
